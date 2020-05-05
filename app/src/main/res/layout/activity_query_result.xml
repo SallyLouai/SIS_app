@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".query_result">
+
+    <LinearLayout
+        android:id="@+id/liner_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/style_for_all"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:background="@drawable/bg_rectangle"
+                android:drawableRight="@drawable/back"
+                android:onClick="btn_back"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/txt_uri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:background="@drawable/bg_rectangle"
+                android:inputType="textUri"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="https://sisonline.arabou.edu.kw/ksaeng/forms/NewStudentSupport.aspx"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:background="@drawable/bg_rectangle"
+                android:drawableRight="@drawable/update2"
+                android:onClick="ubdate" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_web"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+            android:background="#a1bf5d" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_no_conect"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/liner_web"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/progress_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableRight="@drawable/error"
+            android:gravity="center"
+            android:text="لا يوجداتصال بالانترنت "
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="تأكد من اتصالك بالانترنت"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ثم حاول مره اخرى"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web_query"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lin_no_conect"
+        android:background="@color/colorPrimaryDark">
+    </WebView>
+
+</RelativeLayout>

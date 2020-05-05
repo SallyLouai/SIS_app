@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:paddingBottom="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_sup_guide"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_sup_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/download_white"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Student‘S Guide:appeals and Complaints"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_std_guid_app_andcom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_ques_answer"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_ques_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/download_white"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Question and answer"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_ques_ansew"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_stu_totorial"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_stu_totorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/download_white"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Students tutorial in plagiarism"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_std_tut_plag"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_stu_ou"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_stu_ou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Student‘s guide studying on a programme validation the OU"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_std_guid_study"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_stu_prospectus"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_stu_prospectus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/download_white"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Students prospectus for undergraduate"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_std_pro_under"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_stu_appeal"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_stu_appeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/download_white"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Students Appeals and compliants"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_std_app_com"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_update"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/download_white"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="الإعتراض على النتائج والتعديل"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_update_result"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_university"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_university"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:gravity="left|center"
+                    android:onClick="click_uni_reg_std_byl"
+                    android:paddingLeft="10dp"
+                    android:text="University regulations/students bylaws"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_appeal_sys"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_appeal_sys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Appeals system"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_appeals_system"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_compliant"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_compliant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Compliant system"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_compliant_sys"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_inquiries"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_inquiries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Inquiries system"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_inq_sys"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_disability"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_disability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Disability and Dyslexia Support System(DDSS)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:onClick="click_dis_dys_support"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/style_login"
+                android:orientation="horizontal"
+                android:paddingBottom="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/img_exam"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/supp_white" />
+
+                <Button
+                    android:id="@+id/btn_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#23408e"
+                    android:drawableRight="@drawable/ic_forward"
+                    android:gravity="left|center"
+                    android:onClick="click_exam"
+                    android:paddingLeft="10dp"
+                    android:text="Exam Slip"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#fbfbfb"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

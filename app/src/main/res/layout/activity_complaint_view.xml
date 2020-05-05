@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".studentComplaint.ComplaintView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <WebView
+            android:id="@+id/ComplaintWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="createPdf"
+            app:srcCompat="@drawable/ic_print" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

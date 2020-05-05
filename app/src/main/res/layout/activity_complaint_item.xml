@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true"
+        app:cardMaxElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/ComplaintDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complaint_date"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/ComplaintType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complaint_type"
+                android:textColor="#000"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/StudentComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/student_comments"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</android.support.constraint.ConstraintLayout>

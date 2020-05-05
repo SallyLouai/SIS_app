@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sis">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".studentComplaint.ComplaintView"
+            android:label="@string/complaint_details" />
+        <activity
+            android:name=".studentComplaint.InsertNewComplaint"
+            android:label="@string/new_complaint" />
+        <activity
+            android:name=".studentComplaint.Complaint"
+            android:label="@string/student_complaints" />
+        <activity android:name=".query_result" />
+        <activity
+            android:name=".Regisration"
+            android:label="@string/registration" />
+        <activity
+            android:name=".changePassword"
+            android:label="@string/change_password" />
+        <activity
+            android:name=".Grades"
+            android:label="@string/grades" />
+        <activity
+            android:name=".Timetable"
+            android:label="@string/timetable" />
+        <activity
+            android:name=".StudentTimeTable"
+            android:label="@string/Time_table" />
+        <activity
+            android:name=".Plan"
+            android:label="@string/plan" />
+        <activity
+            android:name=".Support"
+            android:label="@string/support" />
+        <activity
+            android:name=".Fees"
+            android:label="@string/fees" />
+        <activity
+            android:name=".Profile"
+            android:label="@string/profile" />
+        <activity
+            android:name=".ForgetPassword"
+            android:label="@string/forgetPassword" />
+        <activity
+            android:name=".Login"
+            android:label="@string/login_title">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:label="@string/app_name" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_title" />
+    </application>
+
+</manifest>
